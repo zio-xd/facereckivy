@@ -1,7 +1,9 @@
 basic.py
-home.py
-multiple_layout.kv
+gui.py
+layout.kv
 .DS_Store
 imagesTest
 *.jpg
 motion.py
+bg.png
+test.py

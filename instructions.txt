@@ -1,0 +1,9 @@
+Make sure that you have the following folders set up prior to running the application
+images: This is where authorised faces are going to be stored
+unauthorised: This is where unauthorised users' faces are going to be captured and stored
+
+To add user, simply head over to the tab with the same label and take your photo
+The photo will then be saved in the images folder with the name that you provided
+
+Once activated, the program will start capturing the faces of those not saved in the images folder and will save them
+in the unauthorised folder as mentioned before
