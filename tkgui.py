@@ -180,11 +180,12 @@ class PageOne(tk.Frame):
 
         button1 = tk.Button(self, text="Back to Home",
                             command=lambda: controller.show_frame(StartPage))
-        button1.pack(pady = 10, padx = 10)
+        #button1.pack(pady = 10, padx = 10)
 
         bp = tk.Button(self, text="Add User",
                             command=pic)
         bp.pack(pady = 10, padx = 10)
+        button1.pack(pady = 10, padx = 10)
 
         cam()
 
@@ -251,7 +252,8 @@ class about(tk.Frame):
 class helpp(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
-        label = tk.Label(self, text = "put in instructions text", font=FNT)
+        f = open("instructions.txt", "r")
+        label = tk.Label(self, text = f.read(), font=FNT)
         label.pack(pady=10,padx=10)
 
         button = tk.Button(self, text="Back to Settings",
@@ -274,6 +276,7 @@ class face(tk.Frame):
         lmain.pack(pady = 10, padx = 10)#grid(row=0, column=0)
 
         cap = cv2.VideoCapture(0)
+        flag = 1
 
         def activate():
             global unknown
